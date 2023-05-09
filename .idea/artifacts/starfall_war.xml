@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="starfall:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>starfall</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="starfall.war">
+      <element id="artifact" artifact-name="starfall:war exploded" />
+    </root>
+  </artifact>
+</component>

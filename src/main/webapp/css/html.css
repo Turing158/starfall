@@ -1,0 +1,50 @@
+:root{
+    --body_height: 2000px;
+}
+body{
+    height: var(--body_height);
+    width: auto;
+}
+*{
+    margin:0px;
+    padding:0px;
+    user-select: none;
+}
+.return_top{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    opacity: 0.3;
+    text-align: center;
+    line-height: 55px;
+    top: 80%;
+    right: 3%;
+    border-radius: 5px;
+    z-index: 10;
+    transition: opacity 500ms;
+    -webkit-transition: opacity 500ms;
+}
+.return_top:hover{
+    opacity: 0.8;
+}
+.tail{
+    position: relative;
+    height:100px;
+    width: 100%;
+    background: url(../img/tail.png);
+    background-size: 50px;
+    z-index: 1;
+    top:20%;
+}
+.tail p{
+    text-align: center;
+    position: relative;
+    height: 50px;
+    width: 100px;
+    left: 48%;
+    top: 25%;
+    color: antiquewhite;
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+}

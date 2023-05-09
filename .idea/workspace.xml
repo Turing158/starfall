@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="starfall:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01d9818b-b326-49ed-bb79-3a7452bc5e8f" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/starfall_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/starfall_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/ToAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/exit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/Util/Connection_SQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/Util/GetCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/Util/MailUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/Util/ViewBaseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/config/sf_config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/DiscussDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/DiscussDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/enity/Discuss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/enity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/service/DiscussService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/Captcha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/addComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/email_send.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/reg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set_information.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set_password.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/comment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/edit/edit_admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/edit/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/edit/information.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/html.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/set.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/top.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/ul.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/works.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/edit_admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/email_code.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/双线英文.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/圆润英文.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/手写体.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/方块体.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/玩酷体.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/bedwars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/foot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home_foot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/skyblock.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/skyblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/tail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/top/top1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/top/top2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/top/top3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/top/top4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/click_power.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/edit/edit_admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/ppt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/reg_emailCode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/set.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/starfall/maven/a.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2PXP2z6FkzrGlnzTXJ2PbEnvv3O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Project.color": "2d274f",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/java/starfall/src/main/webapp",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "d87d66a26be064d80bbbfaff6114f257"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\starfall\src\main\webapp" />
+      <recent name="E:\java\starfall\src\main\java\com\starfall\servlet" />
+      <recent name="E:\java\starfall\src\main\java\com\starfall" />
+      <recent name="E:\java\starfall\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java\starfall\src\main\java\com\starfall\config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.0.42" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.42" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/home" />
+      <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="starfall:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="be1013de-4783-4ee4-b8a0-73a2ef08a695" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63663" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="starfall:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="01d9818b-b326-49ed-bb79-3a7452bc5e8f" name="变更" comment="" />
+      <created>1683551904797</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683551904797</updated>
+      <workItem from="1683551906440" duration="235000" />
+      <workItem from="1683600251109" duration="3989000" />
+      <workItem from="1683607302984" duration="1282000" />
+      <workItem from="1683608600765" duration="906000" />
+      <workItem from="1683610119307" duration="440000" />
+      <workItem from="1683620795016" duration="1503000" />
+      <workItem from="1683623267626" duration="609000" />
+      <workItem from="1683636277473" duration="101000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
