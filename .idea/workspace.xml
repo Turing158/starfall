@@ -9,95 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01d9818b-b326-49ed-bb79-3a7452bc5e8f" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/starfall_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/starfall_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/ToAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/exit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/Util/Connection_SQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/Util/GetCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/Util/MailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/Util/ViewBaseServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/config/sf_config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/DiscussDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/DiscussDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/enity/Discuss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/enity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/service/DiscussService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/Captcha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/addComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/email_send.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/reg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set_information.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set_password.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/edit/edit_admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/edit/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/edit/information.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/html.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/set.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/top.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/ul.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/video.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/works.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/edit_admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/email_code.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/双线英文.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/圆润英文.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/手写体.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/方块体.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/玩酷体.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/bedwars.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/foot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/head.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home_foot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ico.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/skyblock.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/skyblock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/tail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/top/top1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/top/top2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/top/top3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/top/top4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/click_power.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/edit/edit_admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/html.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/ppt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/set.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/reg_emailCode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/set.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/starfall/maven/a.java" afterDir="false" />
+    <list default="true" id="01d9818b-b326-49ed-bb79-3a7452bc5e8f" name="变更" comment="更改为maven项目，通过pom来添加jar包">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,26 +45,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Project.color": "2d274f",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/java/starfall/src/main/webapp",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "d87d66a26be064d80bbbfaff6114f257"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Project.color&quot;: &quot;2d274f&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/java/starfall/src/main/webapp&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d87d66a26be064d80bbbfaff6114f257&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\java\starfall\src\main\webapp" />
@@ -280,7 +193,24 @@
       <workItem from="1683620795016" duration="1503000" />
       <workItem from="1683623267626" duration="609000" />
       <workItem from="1683636277473" duration="101000" />
+      <workItem from="1683638002178" duration="637000" />
+      <workItem from="1683643707382" duration="3000" />
     </task>
+    <task id="LOCAL-00001" summary="更改为maven项目，通过pom来添加jar包">
+      <created>1683638103055</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683638103055</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更改为maven项目，通过pom来添加jar包">
+      <created>1683638619815</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683638619815</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,5 +226,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更改为maven项目，通过pom来添加jar包" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改为maven项目，通过pom来添加jar包" />
   </component>
 </project>
