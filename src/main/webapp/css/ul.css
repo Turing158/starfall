@@ -62,8 +62,24 @@ ul form{
     line-height: 55px;
     transition: all 250ms;
 }
-ul .user_massage{
+/* ul .user_massage{
     position: relative;
+    
+} */
+ul .head_img{
+    position: relative;
+    background-color: white;
+    width: 150px;
+    height: 52px;
+    border-radius: 10px;
+    left: -2px;
+    top: -4px;
+    object-fit:cover;
+    /* background-size: 100% auto; */
+    /* background-repeat: no-repeat; */
+}
+.user:hover .head_img{
+    border-radius: 10px 10px 0px 0px;
     
 }
 ul input{
@@ -100,11 +116,12 @@ ul form:hover{
 }
 .menu a{
     position: relative;
+    width: 145px;
     background-color:rgb(56, 55, 55);
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
-    padding: 0px 57px;
+    padding: 0px;
     float: left;
     transition: all 250ms;
     

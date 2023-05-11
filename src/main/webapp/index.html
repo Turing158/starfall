@@ -70,13 +70,18 @@
         <li id="ul_li"><a id="ul_video"><b>视频</b><br><span>video</span></a></li>
         <li id="ul_li"><a id="ul_comment"><b>留言</b><br><span>comment</span></a></li>
         
-        <form th:if="${session.login} == 1" class="user"><span class="user_massage" th:text="${session.name}">用户名</span><input type="button" value="">
+        <form th:if="${session.login} == 1" class="user">
+            <!-- <span class="user_massage" th:text="${session.name}">用户名用户名用户名</span> -->
+            <img src="img/123.jpg" alt="" class="head_img">
+            <input type="button" value="">
             <div class="menu">
-            <p><a href="/set">设置</a></p>
+            <p><a href="/set">用户名用户名用户名</a></p>
             <p><a href="/exit">退出</a></p>
             </div>
         </form>
-            <form action="login" th:if="${session.login} == null"><span class="user_massage">请登录，谢谢</span><input type="submit" value=""></form>
+            <form action="login" th:if="${session.login} == null">
+                <span class="user_massage">请登录，谢谢</span>
+                <input type="submit" value=""></form>
     </ul>
     <div class="return_top" onclick="return_top()">^</div>
     <div class="home" id="home">

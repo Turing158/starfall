@@ -33,7 +33,7 @@
             你好！<span th:text="${session.name}">用户名</span>
             <br><br>
             <form action="set_information" method="post">
-                <span>名&emsp;字：</span><input type="text" name="name" th:maxlength="16" th:value="${session.name}"><br><br>
+                <span>名&emsp;字：</span><input type="text" name="name" th:maxlength="9" th:value="${session.name}"><br><br>
                 <span class="span1">介&emsp;绍：</span><textarea type="text" name="introduce" th:maxlength="255" th:utext="${#strings.replace(session.introduce,'\n','&lt;br/&gt;')}"></textarea><br>
                 验证码：<input type="text" id="VerifyCode" class="VerifyCode" name="seti_VerifyCode" th:name="seti_code"><img src="jpegCode" id="seti_img_code" class="code_jpg" th:onclick="|seti_Change();|"/><span class="next_code" th:onclick="|seti_Change();|">看不清，换一张</span><br>
                 <span class="i_tips" th:text="${session.i_tips}">aaa</span><input type="submit" class="confirm_information" value="确定修改">
