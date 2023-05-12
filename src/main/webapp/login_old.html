@@ -1,0 +1,429 @@
+<DOCTYPE html>
+    <html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>System</title>
+        <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+        <script>
+            // var us = new Array();
+            // var pa = new Array();
+            // us[0] = "admin"
+            // pa[0] = "123"
+            // function LoginReg() {//登录按钮事件
+            //     console.log(document.getElementById("user").onclick)
+            //     var user = document.getElementById("user").value
+            //     var pass = document.getElementById("password").value
+            //     var m = document.getElementById("mmm")
+            //     var bool = 0
+            //     for (var i = 0; i < us.length;i++) {//对每一个账户进行检测
+            //         if (user == us[i] && pass == pa[i]) {//成功
+            //             m.innerHTML = "!Success!"
+            //             m.style.color = "darkgreen"
+            //             bool = 1
+            //             break
+            //         }
+            //         else if (user == us[i]) {//密码错误
+            //             m.innerHTML = "!Your password is not right!"
+            //             m.style.color = "#790000"
+            //             bool = 1
+            //             break
+            //         }
+            //     }
+            //     if (bool == 0) {//用户不存在
+            //         m.innerHTML = "!User is not exist!"
+            //         m.style.color = "#790000"
+            //     }
+            // }
+            // function register() {//注册按钮事件
+            //     var user = document.getElementById("ruser").value
+            //     var pass = document.getElementById("rpassword").value
+            //     var m = document.getElementById("rmmm")
+            //     var bool = 0//判断是否可以注册该用户
+            //     if (user == "user" && pass == "password") {//去除原本文本框内的文字检测
+            //         m.innerHTML = "!ERROR!"
+            //         m.style.color = "#790000"
+            //     }
+            //     else {
+            //         if (user == "") {//用户名为空
+            //             m.innerHTML = "!user is null!"
+            //             m.style.color = "#790000"
+            //             bool = null
+            //         }
+            //         else if (pass == "") {//密码为空
+            //             m.innerHTML = "!password is null!"
+            //             m.style.color = "#790000"
+            //             bool = null
+            //         }
+            //         for (var i = 0; i < us.length; i++) {//对每一个用户进行检测，看看用户是否存在
+            //             if (us[i] == user) {//用户存在
+            //                 bool = 1
+            //                 m.innerHTML = "!user has exist!"
+            //                 m.style.color = "#790000"
+            //             }
+            //         }
+            //         if (bool == 0) {//允许注册
+            //             var size = us.length + 1
+            //             us[size] = user
+            //             pa[size] = pass
+            //             m.innerHTML = "!Success!"
+            //             m.style.color = "darkgreen"
+            //         }
+            //     }
+            // }
+            function tlogin() {//前往登录按钮事件
+                var l = document.getElementById("ls")
+                var r = document.getElementById("re")
+
+                // var user = document.getElementById("user")
+                // var pass = document.getElementById("password")
+
+                l.style.display = "block"//更改css
+                r.style.display = "none"
+
+                // user.value = "user"
+                // user.style = "color: #cccccc "
+                //
+                // pass.value = "password"
+                // pass.type = "text"
+                // pass.style = "color: #cccccc "
+
+                // clear()
+
+
+            }
+            function tregister() {//前往注册页面
+                var l = document.getElementById("ls")
+                var r = document.getElementById("re")
+
+                // var user = document.getElementById("ruser")
+                // var pass = document.getElementById("rpassword")
+
+                l.style.display = "none"//更改css
+                r.style.display = "block"
+
+                // user.value = "user"
+                // user.style = "color: #cccccc"
+                //
+                // pass.value = "password"
+                // pass.type = "text"
+                // pass.style = "color: #cccccc"
+
+                // clear()
+            }
+            
+            function check_email(email) {
+                var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                var button = document.getElementById("reg");
+                var tips = document.getElementById("reg_tips")
+                if(!(email === "")){
+                    if(re.test(email)){
+                        button.type = "submit";
+                        tips.innerHTML = "可获取邮箱验证码";
+                        tips.style.color = "darkgreen";
+                    }
+                    else{
+                        tips.innerHTML = "邮箱格式错误";
+                        tips.style.color = "darkred";
+                    }
+                }
+            }
+            // function suser() {//点击登录用户文本框事件
+            //     var user = document.getElementById("user")
+            //     if (user.value == "user") {
+            //         user.value = ""
+            //         user.onclick.value = clear()
+            //         user.style = "color:#e5e5e5"
+            //     }
+            // }
+            // function spass() {//点击登录密码文本框事件
+            //     var pass = document.getElementById("password")
+            //     if (pass.value == "password") {
+            //         pass.value = ""
+            //         pass.type = "password"
+            //         pass.onclick.value = clear()
+            //         pass.style = "color:#e5e5e5"
+            //     }
+            // }
+            // function rsuser() {//点击注册用户文本框事件
+            //     var user = document.getElementById("ruser")
+            //     if (user.value == "user") {
+            //         user.value = ""
+            //         user.onclick.value = clear()
+            //         user.style = "color:#e5e5e5"
+            //     }
+            // }
+            // function rspass() {//点击注册密码文本框事件
+            //     var pass = document.getElementById("rpassword")
+            //     if (pass.value == "password") {
+            //         pass.value = ""
+            //         pass.type = "password"
+            //         pass.onclick.value = clear()
+            //         pass.style = "color:#e5e5e5"
+            //     }
+            // }
+            // function clear() {//初始化信息提示
+            //     var m = document.getElementById("mmm")
+            //     var rm = document.getElementById("rmmm")
+            //     m.innerHTML = "<br>"
+            //     rm.innerHTML = "<br>"
+            // }
+
+        </script>
+        <style>
+            body{
+                user-select: none;
+            }
+            .ls {/* 登录页面 */
+                width: 500px;
+                height: 300px;
+                background: #808080;
+                color: #e5e5e5;
+                border-radius: 10px 10px 10px 10px;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -125px 0px 0px -250px;
+                box-shadow: 5px 5px 25px #2b2b2b;
+                display: block;
+            }
+            .re {/* 注册页面 */
+                width: 500px;
+                height: 350px;
+                background: #808080;
+                border-radius: 10px 10px 10px 10px;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -175px 0px 0px -250px;
+                display: none;
+                box-shadow: 5px 5px 25px #2b2b2b;
+            }
+            .login_table{
+                position: relative;
+                margin: auto;
+                color: #f8f8f8;
+            }
+            .reg_table{
+                position: relative;
+                margin: auto;
+                color: #f8f8f8;
+            }
+            /* .user {登录用户文本框
+                color: #cccccc;
+                background: #757575;
+                width:250px;
+                height:30px;
+                margin-right: 1px;
+                border: 2px solid black;
+                border-radius: 5px;
+                transition: all 250ms;
+            }
+            .password {登录密码文本框
+                position: relative;
+                color: #cccccc;
+                background: #757575;
+                width:250px;
+                height:30px;
+                border: 2px solid black;
+                border-radius: 5px;
+                transition: all 250ms;
+            } 
+            .email{
+                position: relative;
+                color: #cccccc;
+                background: #757575;
+                border: 2px solid black;
+                border-radius: 5px;
+                width:250px;
+                height:30px;
+            } */
+            input{
+                position: relative;
+                color: #f7f7f7;
+                background: #757575;
+                width:250px;
+                height:30px;
+                border: 2px solid black;
+                border-radius: 5px;
+                transition: all 250ms;
+            }
+            .email_code{
+                position: relative;
+                color: #cccccc;
+                background: #757575;
+                border: 2px solid black;
+                border-radius: 5px;
+                width:150px;
+                height:30px;
+            }
+            .get_code{
+                position: relative;
+                top: 1px;
+                width: 95px;
+                height: 30px;
+                color: #f5f5f5;
+                background: #757575;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+            input:hover,.get_code:hover{
+                background: #666666;
+            }
+            
+            input:focus{
+                background: #424242;
+                /* err颜色代码#530e0e */
+            }
+            .space_user-password{
+                position: relative;
+                top: 10px;
+            }
+            
+            /*#ruser {!*注册用户文本框*!*/
+            /*    color: #cccccc;*/
+            /*    background: #686868;*/
+            /*    width:250px;*/
+            /*    height:30px;*/
+            /*}*/
+
+            /*#rpassword {!*注册密码文本框*!*/
+            /*    color: #cccccc;*/
+            /*    background: #686868;*/
+            /*    width:250px;*/
+            /*    height:30px;*/
+            /*}*/
+            ::placeholder{
+                font-weight: bold;
+                color: lightgray;
+            }
+            #mmm{
+                color: darkred;
+            }
+            .VerifyCode{
+                width: 100px;
+                top: -6px;
+            }
+            #login_img_code{
+                position: relative;
+                top: 5px;
+                left: 2px;
+            }
+            #reg_img_code{
+                position: relative;
+                top: 5px;
+                left: 2px;
+            }
+            .next_code{
+                font-size: 5px;
+            }
+            .next_code:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body style="background:#3b3b3b">
+
+        
+        <!-- 登录界面 -->
+        <div class="ls" id="ls">
+            <h1 style="color:rgb(70, 70, 70)">Login</h1><!-- 登录标题 -->
+
+                <!-- 输入 -->
+            <form action="confirm_login" method="get">
+                <table class="login_table">
+                    <tr>
+                        <td>用户名：</td>
+                        <td>
+                            <input type="text" id="user" class="user" th:value="${session.user}" th:maxlength="12" placeholder="请输入用户名" name="user" th:onkeypress="this.value=this.value.replace(/\s+/g,'')" th:onkeyup="this.value=this.value.replace(/\s+/g,'')"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>密&emsp;码：</td>
+                        <td>
+                            <input type="password" id="password" class="password" th:maxlength="16" placeholder="请输入密码" name="password" th:onkeypress="this.value=this.value.replace(/\s+/g,'')" th:onkeyup="this.value=this.value.replace(/\s+/g,'')"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>验证码：</td>
+                        <td>
+                            <input type="text" id="VerifyCode" class="VerifyCode" name="VerifyCode" th:name="login_code"><img src="jpegCode" id="login_img_code" th:onclick="|login_Change();|"/><span class="next_code" th:onclick="|login_Change();|">看不清，换一张</span>
+                        </td>
+                    </tr>
+                </table>
+                <!-- <span>用户名</span><span>: </span><input type="text" id="user" class="user" th:value="${session.user}" th:maxlength="12" placeholder="请输入用户名" name="user" th:onkeypress="this.value=this.value.replace(/\s+/g,'')" th:onkeyup="this.value=this.value.replace(/\s+/g,'')"/><br>
+                <span class="space_user-password">密&emsp;码 : </span><input type="password" id="password" class="password" th:maxlength="16" placeholder="请输入密码" name="password" th:onkeypress="this.value=this.value.replace(/\s+/g,'')" th:onkeyup="this.value=this.value.replace(/\s+/g,'')"/><br> -->
+                <!-- 信息提示 -->
+                <p id="mmm" th:text="${session.tips}"><br></p>
+
+                <!-- 按钮 -->
+                <button name="login" style="color:brown;width:80px;height:40px" type="submit">登录</button>
+                &emsp;&emsp;<button name="reg" style="color:brown;width:80px;height:40px"th:onclick="|reg_Change();tregister();|" type="button">去注册</button>
+            </form>
+        </div>
+
+
+        <!-- 注册页面 -->
+        <div class="re" id="re" th:style="'display:' + ${session.reg}">
+            <h1 style="color:rgb(70, 70, 70)">Register</h1><!-- 注册标题 -->
+                <!-- 输入 -->
+            <form action="verify_code" method="get">
+                <table class="reg_table">
+                    <tr>
+                        <td>用户名：</td>
+                        <td><input th:value="${session.reg_user}" type="text" id="ruser" class="user" th:maxlength="12" placeholder="请输入用户名" name="vreg_user" th:onkeypress="this.value=this.value.replace(/\s+/g,'')" th:onkeyup="this.value=this.value.replace(/\s+/g,'')"/></td>
+                    </tr>
+                    <tr>
+                        <td>密&emsp;码：</td>
+                        <td>
+                            <input th:value="${session.reg_password}" type="password" id="rpassword" class="password" th:maxlength="16" placeholder="请输入密码" name="vreg_password" th:onkeypress="this.value=this.value.replace(/\s+/g,'')" th:onkeyup="this.value=this.value.replace(/\s+/g,'')"/>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td>邮&emsp;箱：</td>
+                            <td>
+                                <input th:value="${session.reg_email}" type="text" id="remail" class="email" placeholder="请输入邮箱" name="vreg_email" onblur="check_email(this.value)" th:onkeypress="this.value=this.value.replace(/\s+/g,'')" th:onkeyup="this.value=this.value.replace(/\s+/g,'')"/>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td>验证码：</td>
+                        <td>
+                            <input type="text" id="reg_VerifyCode" class="VerifyCode" name="VerifyCode" th:name="vreg_code"><img src="jpegCode" id="reg_img_code" th:onclick="|reg_Change();|"/><span class="next_code" th:onclick="|reg_Change();|">看不清，换一张</span>
+                        </td>
+                    </tr>
+                </table>
+                <!-- <span>用户名 </span><span>: </span><input th:value="${session.reg_user}" type="text" id="ruser" class="user" th:maxlength="12" placeholder="请输入用户名" name="reg_user" th:onkeypress="this.value=this.value.replace(/\s+/g,'')" th:onkeyup="this.value=this.value.replace(/\s+/g,'')"/><br>
+                <span class="space_user-password">密&emsp;码 : </span><input th:value="${session.reg_password}" type="password" id="rpassword" class="password" th:maxlength="16" placeholder="请输入密码" name="reg_password" th:onkeypress="this.value=this.value.replace(/\s+/g,'')" th:onkeyup="this.value=this.value.replace(/\s+/g,'')"/><br>
+                <span class="space_user-password">邮&emsp;箱 : </span><span></span><input th:value="${session.reg_email}" type="text" id="remail" class="email" placeholder="请输入邮箱" name="reg_email" th:onkeypress="this.value=this.value.replace(/\s+/g,'')" th:onkeyup="this.value=this.value.replace(/\s+/g,'')"/> -->
+                <!-- 信息提示 -->
+                <p th:text="${session.reg_tips}" id="reg_tips">.</p>
+
+                <!-- 按钮 -->
+                <button name="" style="color:brown;width:80px;height:40px" type="button" id="reg" th:type="${session.submit}">注册</button>
+                &emsp;&emsp;<button name="login" style="color:brown;width:80px;height:40px" type="button" th:onclick="|login_Change();tlogin();|">去登陆</button>
+
+            </form>
+        </div>
+    </body>
+    <script type="text/javascript">
+        function getCode(){
+            var email = document.getElementById("remail").value;
+            var user = document.getElementById("ruser").value;
+            var password = document.getElementById("rpassword").value;
+                window.location.href="/send_email?reg_email="+email+"&reg_user="+user+"&reg_password="+password;
+                
+            }
+        function login_Change() {
+            var img = document.getElementById("login_img_code")
+            //设置时间戳
+            var date = new Date().getTime();
+            img.src="jpegCode?"+date;
+        }
+        function reg_Change() {
+            var img = document.getElementById("reg_img_code")
+            var date = new Date().getTime();
+            img.src="jpegCode?"+date;
+        }
+    </script>
+    </html>

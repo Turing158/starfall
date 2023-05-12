@@ -36,5 +36,10 @@ public class UserService {
     public void setNewPassword(String user, String password){
         userDao.setNewPassword(user,password);
     }
-
+    public String getHead(String user){
+        return userDao.getHead(user);
+    }
+    public void setHead(String user,String headFilename){
+        userDao.setHead(user,headFilename);
+    }
 }

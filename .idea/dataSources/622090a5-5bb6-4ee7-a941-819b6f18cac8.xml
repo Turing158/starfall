@@ -1099,5 +1099,9 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <DataType>varchar(255)|0s</DataType>
       <Position>7</Position>
     </column>
+    <column id="317" parent="305" name="head">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>8</Position>
+    </column>
   </database-model>
 </dataSource>

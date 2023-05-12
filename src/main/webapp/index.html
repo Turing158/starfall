@@ -72,14 +72,14 @@
         
         <form th:if="${session.login} == 1" class="user">
             <!-- <span class="user_massage" th:text="${session.name}">用户名用户名用户名</span> -->
-            <img src="img/123.jpg" alt="" class="head_img">
+            <img th:src="@{'/head_img/'+${session.head}}" alt="" class="head_img">
             <input type="button" value="">
             <div class="menu">
-            <p><a href="/set">用户名用户名用户名</a></p>
+            <p><a href="/set" th:text="${session.name}" >用户名用户名用户名</a></p>
             <p><a href="/exit">退出</a></p>
             </div>
         </form>
-            <form action="login" th:if="${session.login} == null">
+            <form action="login" th:if="${session.login} == null" class="unuser">
                 <span class="user_massage">请登录，谢谢</span>
                 <input type="submit" value=""></form>
     </ul>
@@ -145,14 +145,7 @@
                         <div class="td_content" th:utext="${#strings.replace(comment.content,'\n','&lt;br/&gt;')}">
                             我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我<br>
                             我<br>
-                            我<br>
-                            我<br>
-                            我<br>
-                            我<br>
-                            我<br>
-                            我<br>
-                            我<br>
-                            我
+                            
                         </div>
                     </td>
                 </tr>
@@ -172,7 +165,7 @@
                     <td class="ac_comment">
                         <div class="ac_comment_top">快发话！！！<span class="ac_comment_top_tips" id="ac_comment_top_tips">0 行 | 0 字数</span></div>
                         <div th:if="${session.login} == null" class="tipsToLogin">请登录，谢谢！</div>
-                        <textarea name="content" id="" th:onkeyup="|Check(this,10,255);|" th:maxlength="255" th:if="${session.login} == 1" th:utext="${#strings.replace(session.comment_input,'\n','&lt;br/&gt;')}">a</textarea>
+                        <textarea name="content" id="" th:onkeyup="|Check(this,10,255);|" th:maxlength="255" th:if="${session.login} == 1" th:utext="${session.comment_input}">a</textarea>
                     </td>
                     <td class="ac_oprate">
                         <div class="VerifyCode_div">

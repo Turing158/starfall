@@ -37,7 +37,7 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public void Reg(String user, String password, String name, String date, String email) {
-        String sql = "insert into web.user (user,password,name,date,email,level) values (?,?,?,?,?,1)";
+        String sql = "insert into web.user (user,password,name,date,email,level,head) values (?,?,?,?,?,1,'null.png')";
         jdbcTemplate.update(sql,user,password,name,date,email);
     }
 
@@ -71,5 +71,17 @@ public class UserDaoImpl implements UserDao{
     public void setNewPassword(String user, String password) {
         String sql = "update web.user set password=? where user=?";
         jdbcTemplate.update(sql,password,user);
+    }
+
+    @Override
+    public String getHead(String user) {
+        String sql = "select head from web.user where user=?";
+        return jdbcTemplate.queryForObject(sql,String.class,user);
+    }
+
+    @Override
+    public void setHead(String user,String headFilename) {
+        String sql = "update web.user set head=? where user=?";
+        jdbcTemplate.update(sql,headFilename,user);
     }
 }

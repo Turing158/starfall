@@ -44,6 +44,16 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-api:10.1.0" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-servlet-api:10.1.0" />
+          <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter:5.9.3" />
+          <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-api:5.9.3" />
+          <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.2.0" />
+          <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-commons:1.9.3" />
+          <element id="library" level="project" name="Maven: org.apiguardian:apiguardian-api:1.1.2" />
+          <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-params:5.9.3" />
+          <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.9.3" />
+          <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-engine:1.9.3" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:1.4" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

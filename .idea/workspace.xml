@@ -9,11 +9,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01d9818b-b326-49ed-bb79-3a7452bc5e8f" name="变更" comment="添加readme" />
+    <list default="true" id="01d9818b-b326-49ed-bb79-3a7452bc5e8f" name="变更" comment="添加头像，更改html">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toReg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set_head.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/test/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/reg.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon/delete-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon/stick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon/understar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_old.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/reg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/starfall_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/starfall_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/622090a5-5bb6-4ee7-a941-819b6f18cac8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/622090a5-5bb6-4ee7-a941-819b6f18cac8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/To/toHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/To/toLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/enity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/enity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/reg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/reg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/comment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/html.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/html.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/set.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/set.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/ul.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/ul.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/set.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/set.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/set.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/set.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,26 +84,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Project.color": "2d274f",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/java/starfall",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "d87d66a26be064d80bbbfaff6114f257"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Project.color&quot;: &quot;2d274f&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/桌面/string&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d87d66a26be064d80bbbfaff6114f257&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\java\starfall" />
@@ -74,6 +116,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\java\starfall\src\main\java\com\starfall\config" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.starfall" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -83,7 +128,38 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 8.0.42">
+    <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="starfall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.starfall.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.starfall.test" />
+      <option name="MAIN_CLASS_NAME" value="com.starfall.test.test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="starfall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.starfall.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.starfall.test" />
+      <option name="MAIN_CLASS_NAME" value="com.starfall.test.test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.0.42" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.42" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/home" />
       <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
@@ -175,6 +251,12 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test.test" />
+        <item itemvalue="JUnit.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -196,6 +278,9 @@
       <workItem from="1683643707382" duration="3000" />
       <workItem from="1683643923054" duration="103000" />
       <workItem from="1683644164942" duration="53000" />
+      <workItem from="1683766172245" duration="14287000" />
+      <workItem from="1683878178310" duration="2074000" />
+      <workItem from="1683900640659" duration="6843000" />
     </task>
     <task id="LOCAL-00001" summary="更改为maven项目，通过pom来添加jar包">
       <created>1683638103055</created>
@@ -225,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683644209972</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加头像，更改html">
+      <created>1683766304853</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683766304853</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,8 +335,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="更改为maven项目，通过pom来添加jar包" />
     <MESSAGE value="添加readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加readme" />
+    <MESSAGE value="添加头像，更改html" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加头像，更改html" />
   </component>
 </project>

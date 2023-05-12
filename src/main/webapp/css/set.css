@@ -57,7 +57,7 @@ span{
     position: relative;
     transform: rotate(45deg);
     left: 108px;
-    top: 100px;
+    top: 125px;
     background-color: rgb(0, 0, 0);
     width: 15px;
     height: 15px;
@@ -80,7 +80,7 @@ span{
     position: relative;
     transform: rotate(45deg);
     left: 108px;
-    top: 160px;
+    top: 188px;
     background-color: rgb(0, 0, 0);
     width: 15px;
     height: 15px;
@@ -144,7 +144,7 @@ textarea:focus{
     display: none;
     transform: rotate(45deg);
     left: 108px;
-    top: 220px;
+    top: 252px;
     background-color: rgb(0, 0, 0);
     width: 15px;
     height: 15px;
@@ -188,4 +188,79 @@ textarea:focus{
     position: relative;
     top: 10px;
     left: 2px;
+}
+ul .head_img{
+    position: relative;
+    background-color: aliceblue;
+    border: 1px solid white;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+ul .head_set{
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid white;
+    /* display: none; */
+    background-color:#272727;
+    opacity: 0;
+    transition: all 250ms;
+}
+.head_set:hover{
+    opacity: 0.6;
+}
+.head_page{
+    position: relative;
+    border: 2px solid rgb(0, 0, 0);
+    display: none;
+    left: 115px;
+    width: 100%;
+    height: 778px;
+    background-color: #474747;
+}
+.h_square{
+    position: relative;
+    transform: rotate(45deg);
+    left: 108px;
+    top: 45px;
+    background-color: rgb(0, 0, 0);
+    width: 15px;
+    height: 15px;
+    display: none;
+}
+#upload_head{
+    position: relative;
+    top: 50px;
+}
+.img_preview1,.img_preview2,.img_preview3{
+    position: relative;
+    border: 1px solid white;
+    transition: all 250ms;
+    object-fit: cover;
+}
+.img_preview1{
+    height: 32px;
+    width: 32px;
+}
+.img_preview2{
+    height: 64px;
+    width: 64px;
+}
+.img_preview3{
+    height: 128px;
+    width: 128px;
+}
+.img_preview1:hover,.img_preview2:hover,.img_preview3:hover{
+    border-radius: 50%;
+}
+
+.span32{
+    font-size: 8px;
 }

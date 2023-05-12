@@ -2,6 +2,8 @@
     margin:0px;
     padding:0px;
     user-select: none;
+    transition: all 250ms;
+    -webkit-transition: all 250ms;
 }
 #ul{
     width: 100%;
@@ -12,6 +14,8 @@
     top:0;
     overflow: none;
     padding-left: 38%;
+    font-family: cool_font;
+    font-weight: bold;
     z-index: 1;
     box-shadow:0px 1px 5px rgb(0, 0, 0);
 }
@@ -24,11 +28,8 @@
     text-decoration: none;
     text-align: center;
     padding: 4px 20px;
-    color: rgb(202, 202, 202);
+    color: rgb(255, 255, 255);
     border-radius: 10px;
-    transition: all 500ms;
-    -webkit-transition: background-color 500ms,
-                        color 500ms;
 }
 #ul_li a:hover:not(.active){
     color: black;
@@ -36,21 +37,20 @@
     border-radius: 10px;
 }
 #ul_li a:hover:not(.active) b{
-    position: relative;
-    top: 25px;
+    display: inline-block;
+    transform: translateY(25px);
 }
 #ul_li a:hover:not(.active) span{
-    position: relative;
-    top: -25px;
+    display: inline-block;
+    transform: translateY(-25px);
 }
 
 #ul_li a.active{
     background-color: dodgerblue;
     color: black;
     border-radius: 10px;
-
 }
-ul form{
+/* ul form{
     float: right;
     right: 1px;
     border: 2px solid rgb(255, 255, 255);
@@ -61,26 +61,38 @@ ul form{
     height: 55px;
     line-height: 55px;
     transition: all 250ms;
+} */
+ul form{
+    float: right;
+    right: 1px;
+    border: 2px solid rgb(255, 255, 255);
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    height: 55px;
+    line-height: 55px;
 }
+/* .unuser{
+    display: none;
+} */
 /* ul .user_massage{
     position: relative;
     
 } */
 ul .head_img{
     position: relative;
-    background-color: white;
-    width: 150px;
+    background-color: rgb(255, 0, 0);
+    width: 52px;
     height: 52px;
     border-radius: 10px;
-    left: -2px;
-    top: -4px;
+    left: 0px;
+    top: -3px;
     object-fit:cover;
-    /* background-size: 100% auto; */
-    /* background-repeat: no-repeat; */
 }
 .user:hover .head_img{
     border-radius: 10px 10px 0px 0px;
-    
+    width: 148px;
 }
 ul input{
     position: relative;
@@ -95,10 +107,24 @@ ul input{
 ul form:hover{
     border:2px solid gray;
 }
+.user{
+    position: relative;
+    float: right;
+    right: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+}
 .user:hover{
     border-bottom: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    right: 1px;
+    width: 150px;
 }
 .menu{
     position: relative;
@@ -112,7 +138,6 @@ ul form:hover{
     box-shadow:0px 4px 4px rgb(0, 0, 0);
     border-top: 0;
     opacity: 0;
-    transition: all 250ms;
 }
 .menu a{
     position: relative;
@@ -123,8 +148,6 @@ ul form:hover{
     font-weight: bold;
     padding: 0px;
     float: left;
-    transition: all 250ms;
-    
 }
 .menu a:hover{
     color: rgb(255, 255, 255);

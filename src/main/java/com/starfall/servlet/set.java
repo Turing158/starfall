@@ -25,6 +25,7 @@ public class set extends ViewBaseServlet {
             session.setAttribute("display_me","block");
             session.setAttribute("display_i","none");
             session.setAttribute("display_p","none");
+            session.setAttribute("display_h","none");
         }
         String user_session = (String) session.getAttribute("user");
         User user = userService.getInfo(user_session);

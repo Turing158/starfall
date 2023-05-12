@@ -40,7 +40,7 @@ public class email_send extends ViewBaseServlet {
         session.setAttribute("reg_notice",null);
         boolean user_flag = userService.checkUserRepeat(user);
         boolean flag = userService.checkEmailRepeat(email);
-        System.out.println(session.getAttribute("enter_flag"));
+        session.setAttribute("submit","button");
         if ((boolean) session.getAttribute("enter_flag")){
             email_code = getCode.getcode();
             session.setAttribute("email_code",email_code);

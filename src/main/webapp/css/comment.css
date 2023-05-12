@@ -74,8 +74,10 @@
     position: relative;
     color:rgb(199, 199, 199);
     left: 10px;
+    height:304px;
     border-top: 4px solid rgb(179, 82, 3);
     border-bottom: 4px solid rgb(179, 82, 3);
+    
 }
 .td_comment .text{
     color: rgb(61, 61, 61);

@@ -12,4 +12,6 @@ public interface UserDao {
     void updateInformation(String user,String name,String introduce);
     String checkOldPassword(String user);
     void setNewPassword(String user,String password);
+    String getHead(String user);
+    void setHead(String user,String headFilename);
 }

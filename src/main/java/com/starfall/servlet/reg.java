@@ -14,14 +14,14 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.LocalDate;
 
-@WebServlet("/reg")
+@WebServlet("/confirm_reg")
 public class reg extends ViewBaseServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ApplicationContext context = new AnnotationConfigApplicationContext(sf_config.class);
         UserService userService = context.getBean("userService", UserService.class);
         HttpSession session = req.getSession();
-        session.setAttribute("reg","block");
+//        session.setAttribute("reg","block");
         String user = (String) session.getAttribute("reg_user");
         String password = (String) session.getAttribute("reg_password");
         String email = (String) session.getAttribute("reg_email");

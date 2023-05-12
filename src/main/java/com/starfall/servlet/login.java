@@ -25,6 +25,7 @@ public class login extends ViewBaseServlet {
         String code = req.getParameter("login_code");
         session.setAttribute("user",user);
         String flag = userService.login(user);
+        session.setAttribute("tips"," ");
         if(Objects.equals(code, "")){
             session.setAttribute("tips","验证码不能为空");
             resp.sendRedirect("/login");
@@ -48,6 +49,7 @@ public class login extends ViewBaseServlet {
         else if(Objects.equals(flag, password) && Objects.equals(code,session.getAttribute("code"))){
             String name = userService.getName(user);
             session.setAttribute("user",user);
+            session.setAttribute("head",userService.getHead(user));
             session.setAttribute("password",password);
             session.setAttribute("login","1");
             session.setAttribute("name",name);

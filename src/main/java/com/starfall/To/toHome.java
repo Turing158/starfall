@@ -34,8 +34,8 @@ public class toHome extends ViewBaseServlet {
         if (!StringUtils.isEmpty(page_str)){
             page = Integer.valueOf(page_str);
         }
-        session.getAttribute("user");
-        session.getAttribute("login");
+//        session.getAttribute("user");
+//        session.getAttribute("login");
         Integer last_page = discussService.getPage(only_user);
 //        last_page = count_page(only_user);
         session.setAttribute("comment",discussService.getDiscuss(page,only_user));

@@ -1,9 +1,26 @@
-:root{
-    --body_height: 2000px;
+html{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-button{
+    background-image: url(/img/icon/understar.png);
+    background-size: 100% 100%;
+    background-color: rgb(119, 119, 119);
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    border: 2px solid rgb(56, 27, 1);
+    background-image: url(/img/icon/stick.png);
+}
+::-webkit-scrollbar-track{
+    background-image: url(/img/tail.png);
 }
 body{
-    height: var(--body_height);
     width: auto;
+    min-height: 100vh;
 }
 *{
     margin:0px;
@@ -22,8 +39,6 @@ body{
     right: 3%;
     border-radius: 5px;
     z-index: 10;
-    transition: opacity 500ms;
-    -webkit-transition: opacity 500ms;
 }
 .return_top:hover{
     opacity: 0.8;
@@ -35,7 +50,7 @@ body{
     background: url(../img/tail.png);
     background-size: 50px;
     z-index: 1;
-    top:20%;
+    top:200px;
 }
 .tail p{
     text-align: center;

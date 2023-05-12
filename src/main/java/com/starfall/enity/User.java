@@ -9,7 +9,15 @@ public class User {
     private String name;
     private String introduce;
     private String email;
+    private String head;
 
+    public String getHead() {
+        return head;
+    }
+
+    public void setHead(String head) {
+        this.head = head;
+    }
 
     public int getId() {
         return id;
