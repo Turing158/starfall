@@ -60,7 +60,7 @@
     border-bottom: 1px dashed black;
 }
 .td_user{
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     font-weight: bolder;
     background-color: rgb(248, 215, 154);
@@ -70,14 +70,35 @@
     border-bottom: 4px solid  rgb(177, 115, 0);
     transition: all 250ms;
 }
+.td_user span{
+    position: relative;
+    top: 15px;
+}
+.td_user img{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-color: #cacaca;
+    border: 3px solid rgb(97, 97, 97);
+    border-radius: 10px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.td_user .underline{
+    position: relative;
+    border-bottom: 3px dotted rgb(168, 123, 55);
+}
 .td_comment{
     position: relative;
     color:rgb(199, 199, 199);
+    /* display: block; */
+    vertical-align: top;
     left: 10px;
     height:304px;
     border-top: 4px solid rgb(179, 82, 3);
     border-bottom: 4px solid rgb(179, 82, 3);
-    
+    /* justify-content: center; */
 }
 .td_comment .text{
     color: rgb(61, 61, 61);

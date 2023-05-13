@@ -37,6 +37,7 @@ public class addComment extends ViewBaseServlet {
         session.setAttribute("comment_input",content);
         if(Objects.equals(code,session.getAttribute("code"))){
             discussService.addComment(user,content,date,name);
+            discussService.updateHead();
             session.setAttribute("comment_tips","发话成功");
             session.setAttribute("comment_input",null);
             session.setAttribute("code",null);

@@ -28,7 +28,6 @@ public class email_send extends ViewBaseServlet {
         GetCode getCode = new GetCode();
         MailUtil mail = new MailUtil();
         String email_code = "";
-        session.setAttribute("reg","block");
         String user = req.getParameter("vreg_user");
         String password = req.getParameter("vreg_password");
         String email = req.getParameter("vreg_email");
@@ -36,11 +35,10 @@ public class email_send extends ViewBaseServlet {
         session.setAttribute("reg_user",user);
         session.setAttribute("reg_password",password);
         session.setAttribute("reg_email",email);
-        session.setAttribute("code_tips",".");
+        session.setAttribute("code_tips"," ");
         session.setAttribute("reg_notice",null);
         boolean user_flag = userService.checkUserRepeat(user);
         boolean flag = userService.checkEmailRepeat(email);
-        session.setAttribute("submit","button");
         if ((boolean) session.getAttribute("enter_flag")){
             email_code = getCode.getcode();
             session.setAttribute("email_code",email_code);
@@ -53,42 +51,27 @@ public class email_send extends ViewBaseServlet {
             super.processTemplate("reg_emailCode",req,resp);
         }
         else{
-            if(Objects.equals(user,"")){
-                session.setAttribute("reg_tips","用户名不能为空");
-                session.setAttribute("submit","submit");
-                super.processTemplate("login",req,resp);
-            }
-            else if(Objects.equals(password,"")){
-                session.setAttribute("reg_tips","密码不能为空");
-                session.setAttribute("submit","submit");
-                super.processTemplate("login",req,resp);
-            }
-            else if(email == null){
-                session.setAttribute("reg_tips","邮箱不能为空");
-                session.setAttribute("submit","submit");
-                super.processTemplate("login",req,resp);
-            }
-            else if(user.length() < 3){
+            if(user.length() < 3){
                 session.setAttribute("reg_tips","用户名不能小于3个字符");
-                session.setAttribute("submit","submit");
-                super.processTemplate("login",req,resp);
+                super.processTemplate("reg",req,resp);
             }
             else if(password.length() < 6){
                 session.setAttribute("reg_tips","密码不能小于6个字符");
-                session.setAttribute("submit","submit");
-                super.processTemplate("login",req,resp);
+                super.processTemplate("reg",req,resp);
             }
-            else if(!user_flag){
+            else if (!Objects.equals(code,session.getAttribute("code"))){
+                session.setAttribute("reg_tips","验证码错误");
+                super.processTemplate("reg",req,resp);
+            }
+            else if(user_flag){
                 session.setAttribute("reg_tips","用户已存在");
-                session.setAttribute("submit","submit");
-                super.processTemplate("login",req,resp);
+                super.processTemplate("reg",req,resp);
             }
-            else if(!flag){
+            else if(flag){
                 session.setAttribute("reg_tips","邮箱已存在");
-                session.setAttribute("submit","button");
-                super.processTemplate("login",req,resp);
+                super.processTemplate("reg",req,resp);
             }
-            else if(flag && user_flag && Objects.equals(code,session.getAttribute("code"))){
+            else if(!flag && !user_flag && Objects.equals(code,session.getAttribute("code"))){
                 session.setAttribute("enter_flag",true);
                 email_code = getCode.getcode();
                 session.setAttribute("email_code",email_code);
@@ -99,12 +82,8 @@ public class email_send extends ViewBaseServlet {
                 }
                 super.processTemplate("reg_emailCode",req,resp);
             }
-            else if (!Objects.equals(code,session.getAttribute("code"))){
-                session.setAttribute("reg_tips","验证码错误");
-                session.setAttribute("submit","submit");
-                super.processTemplate("login",req,resp);
-            }
         }
+
         session.setAttribute("code",null);
     }
 

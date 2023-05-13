@@ -20,4 +20,7 @@ public class DiscussService {
     public void addComment(String user, String content, String date,String name){
         discussDao.addComment(user,content,date,name);
     }
+    public void updateHead(){
+        discussDao.updateHead();
+    }
 }

@@ -16,7 +16,7 @@ html{
     background-image: url(/img/icon/stick.png);
 }
 ::-webkit-scrollbar-track{
-    background-image: url(/img/tail.png);
+    background-color: gray;
 }
 body{
     width: auto;

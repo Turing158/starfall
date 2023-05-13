@@ -2,6 +2,7 @@ package com.starfall.servlet;
 
 import com.starfall.Util.ViewBaseServlet;
 import com.starfall.config.sf_config;
+import com.starfall.service.DiscussService;
 import com.starfall.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -22,6 +23,7 @@ public class set_head extends ViewBaseServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ApplicationContext context = new AnnotationConfigApplicationContext(sf_config.class);
         UserService userService = context.getBean("userService", UserService.class);
+        DiscussService discussService = context.getBean("discussService", DiscussService.class);
         HttpSession session = req.getSession();
         session.setAttribute("display_me","none");
         session.setAttribute("display_i","none");
@@ -41,6 +43,8 @@ public class set_head extends ViewBaseServlet {
 //        永久保存头像，避免服务器崩溃导致丢失
 //        part.write(savePath+user+fileType);
         userService.setHead(user,user+fileType);
+        discussService.updateHead();
+        session.setAttribute("head",user+fileType);
         resp.sendRedirect("/set");
     }
 }

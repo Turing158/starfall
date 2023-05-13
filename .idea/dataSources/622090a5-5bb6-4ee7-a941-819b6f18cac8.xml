@@ -1071,37 +1071,77 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <DataType>varchar(255)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="310" parent="305" name="user">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>1</Position>
-    </column>
-    <column id="311" parent="305" name="password">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="312" parent="305" name="date">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>3</Position>
-    </column>
-    <column id="313" parent="305" name="level">
-      <DataType>int|0s</DataType>
-      <Position>4</Position>
-    </column>
-    <column id="314" parent="305" name="name">
+    <column id="310" parent="304" name="head">
       <DataType>varchar(255)|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="315" parent="305" name="introduce">
+    <foreign-key id="311" parent="304" name="head">
+      <ColNames>head</ColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+      <RefColNames>head</RefColNames>
+      <RefTableName>user</RefTableName>
+    </foreign-key>
+    <index id="312" parent="304" name="head">
+      <ColNames>head
+user</ColNames>
+      <Type>btree</Type>
+    </index>
+    <column id="313" parent="305" name="user">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="314" parent="305" name="password">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="315" parent="305" name="date">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="316" parent="305" name="level">
+      <DataType>int|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="317" parent="305" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="318" parent="305" name="introduce">
       <DataType>varchar(255)|0s</DataType>
       <Position>6</Position>
     </column>
-    <column id="316" parent="305" name="email">
+    <column id="319" parent="305" name="email">
       <DataType>varchar(255)|0s</DataType>
       <Position>7</Position>
     </column>
-    <column id="317" parent="305" name="head">
+    <column id="320" parent="305" name="head">
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
+    <index id="321" parent="305" name="PRIMARY">
+      <ColNames>user</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="322" parent="305" name="user">
+      <ColNames>user</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="323" parent="305" name="head">
+      <ColNames>head</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="324" parent="305" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="325" parent="305" name="user">
+      <UnderlyingIndexName>user</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>

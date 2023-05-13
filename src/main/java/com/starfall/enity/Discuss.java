@@ -5,6 +5,15 @@ public class Discuss {
     private String name;
     private String content;
     private String date;
+    private String head;
+
+    public String getHead() {
+        return head;
+    }
+
+    public void setHead(String head) {
+        this.head = head;
+    }
 
     @Override
     public String toString() {

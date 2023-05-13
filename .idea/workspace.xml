@@ -9,39 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01d9818b-b326-49ed-bb79-3a7452bc5e8f" name="变更" comment="添加头像，更改html">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toReg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set_head.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/starfall/test/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/reg.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon/delete-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon/down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon/stick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon/understar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon/up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_old.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/starfall_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/starfall_war_exploded.xml" afterDir="false" />
+    <list default="true" id="01d9818b-b326-49ed-bb79-3a7452bc5e8f" name="变更" comment="更换登录注册界面，更扁平，有特效">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/reg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/622090a5-5bb6-4ee7-a941-819b6f18cac8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/622090a5-5bb6-4ee7-a941-819b6f18cac8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/To/toHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/To/toLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/enity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/enity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/To/toReg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/toReg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/dao/DiscussDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/DiscussDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/dao/DiscussDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/dao/DiscussDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/enity/Discuss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/enity/Discuss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/service/DiscussService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/service/DiscussService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/addComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/addComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/email_send.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/email_send.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/reg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/reg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/To/set.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set_head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/starfall/servlet/set_head.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/comment.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/html.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/html.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/set.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/set.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/reg.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/reg.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/ul.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/ul.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/email_code.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/email_code.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/set.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/set.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/reg_emailCode.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reg_emailCode.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/set.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/set.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -280,7 +270,10 @@
       <workItem from="1683644164942" duration="53000" />
       <workItem from="1683766172245" duration="14287000" />
       <workItem from="1683878178310" duration="2074000" />
-      <workItem from="1683900640659" duration="6843000" />
+      <workItem from="1683900640659" duration="8574000" />
+      <workItem from="1683945802256" duration="3842000" />
+      <workItem from="1683954865579" duration="52000" />
+      <workItem from="1683955919822" duration="7392000" />
     </task>
     <task id="LOCAL-00001" summary="更改为maven项目，通过pom来添加jar包">
       <created>1683638103055</created>
@@ -317,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683766304853</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更换登录注册界面，更扁平，有特效">
+      <created>1683908982992</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683908982992</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +339,7 @@
     <MESSAGE value="更改为maven项目，通过pom来添加jar包" />
     <MESSAGE value="添加readme" />
     <MESSAGE value="添加头像，更改html" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加头像，更改html" />
+    <MESSAGE value="更换登录注册界面，更扁平，有特效" />
+    <option name="LAST_COMMIT_MESSAGE" value="更换登录注册界面，更扁平，有特效" />
   </component>
 </project>

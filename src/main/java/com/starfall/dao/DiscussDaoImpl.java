@@ -38,4 +38,10 @@ public class DiscussDaoImpl implements DiscussDao{
         String sql = "insert into web.discuss (user,content,date,name) values(?,?,?,?)";
         jdbcTemplate.update(sql,user,content,date,name);
     }
+
+    @Override
+    public void updateHead() {
+        String sql = "UPDATE discuss INNER JOIN user ON discuss.user = user.user SET discuss.head = user.head";
+        jdbcTemplate.update(sql);
+    }
 }

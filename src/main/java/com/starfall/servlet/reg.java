@@ -51,7 +51,9 @@ public class reg extends ViewBaseServlet {
             session.setAttribute("reg_email",null);
             session.setAttribute("reg_user",null);
             session.setAttribute("reg_password",null);
+            session.setAttribute("reg_tips",null);
             session.setAttribute("reg",null);
+            session.setAttribute("tips","成功注册账号");
         }
     }
 

@@ -14,6 +14,7 @@ public class toReg extends ViewBaseServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
+        session.setAttribute("submit","button");
         super.processTemplate("reg",req,resp);
     }
 }

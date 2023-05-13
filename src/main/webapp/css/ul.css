@@ -82,7 +82,7 @@ ul form{
 } */
 ul .head_img{
     position: relative;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 52px;
     height: 52px;
     border-radius: 10px;

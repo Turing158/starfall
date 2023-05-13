@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <title>注册-|StarFall|</title>
     <link rel="stylesheet" href="css/reg.css">
     <link rel="stylesheet" href="css/font.css">
+    <script src="js/reg.js"></script>
 </head>
 <body>
     <div>
@@ -25,14 +27,21 @@
             <span class="email_span">邮&emsp;箱：</span>
             <div class="email_underline"></div>
             <br>
-            <input type="search" class="code_input" name="vreg_code"  required>
+            <input type="search" class="code_input" name="vreg_code" required>
             <span class="code_span">验证码：</span>
             <div class="code_underline"></div>
-            <img src="/jpegCode" alt="VerifyCode">
+            <img src="/jpegCode" alt="VerifyCode" onclick="Change()" id="img_code">
             <p th:text="${session.reg_tips}">info</p>
-            <input th:type="${session.submit}" value="注册" class="reg">
+            <input type="submit" value="注册" class="reg">
             <button class="login" onclick="window.location='/login';">返回登录</button>
         </form>
     </div>
 </body>
+<script>
+    function Change() {
+    var img = document.getElementById("img_code")
+    var date = new Date().getTime();
+    img.src="jpegCode?"+date;
+}
+</script>
 </html>
